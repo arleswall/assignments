@@ -1,0 +1,82 @@
+```// Warmup 1
+// Using a for loop, write a program that prints
+// the numbers 0 - 100 in the console (each number on its
+// own line)
+
+for (var i = 0; i <= 100; i++) {
+  console.log(i);
+}
+
+// Warmup 2
+// Using a for loop, write a program that prints the numbers 100
+// to 0 (counting backwards) in the console (each number on its
+// own line)
+
+for (var i = 100; i >= 0; i--) {
+  console.log(i);
+}
+
+// Warmup 3
+// Using a for loop, write a program that prints the EVEN numbers
+// between 0 and 100 in the console (each number on its own line)
+
+
+for (var i = 0; i < 101; i += 2) {
+  console.log(i);
+}
+
+for (var i = 0; i <= 100; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
+
+
+// Warmup 4
+// Using a for loop, write a program that prints the ODD numbers
+// from 100 to 0 (going backwards) in the console (each number
+// on its own line)
+
+
+for (var i = 99; i >= 0; i--) {
+  if (i % 2 === 1) {
+    console.log(i);
+  }
+}
+
+for (var i = 99; i > 0; i-=2) {
+  console.log(i);
+}
+```
+
+
+V School Computer [10:13 AM] 
+```var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+console.log(colors.length);
+
+for (var i = 0; i < colors.length; i++) {
+  console.log(colors[i]);
+}
+
+for (var i = 0; i < 20; i++) {
+  console.log(colors[i % colors.length]);
+}
+
+var myPhrase = "I like turtles. They are fun. And ninjas.";
+for (var i = 0; i < myPhrase.length; i++) {
+  console.log(myPhrase[i]);
+}
+```
+
+
+V School Computer [10:24 AM] 
+```var vegetables = ["Squash", "Carrots", "Celery", "Peanuts", "Kiwi"];
+
+for (var i = 0; i < vegetables.length; i++) {
+  if (vegetables[i] === vegetables[1]) {
+    console.log(vegetables[1] + " found at index " + i);
+    break;
+  } else {
+    console.log(vegetables[i] + " is not " + vegetables[1] + "!");
+  }
+}```
