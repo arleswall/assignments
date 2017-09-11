@@ -1,0 +1,59 @@
+.nav {
+    background-color: gainsboro;
+    position: fixed;
+    top: 0;
+    border-bottom: 3px solid black;
+    height: 30px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+button {
+    width: 100px;
+    background-color: grey;
+    color: whitesmoke;
+    border-radius: 20%;
+    
+}
+
+header, section {
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+
+h1 {
+    text-align: center;
+    background-color: skyblue;
+    font-family: fantasy;
+    font-size: 40px;
+    line-height: 3;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;    
+}
+
+
+h2 {
+    text-decoration:underline;
+    margin-bottom: 0px;
+}
+h5 {
+    color: darkgrey;
+    text-align: right;
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+
+.image {
+    float: left;
+    
+}
+
+p {
+  
+}

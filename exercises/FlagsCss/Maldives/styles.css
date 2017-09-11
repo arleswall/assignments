@@ -1,0 +1,37 @@
+.parent {
+    border: 2px solid black;
+    height: 150px;
+    width: 200px;
+    background-color: #d21034;
+    position: relative
+}
+
+
+.child1 {
+    height: 50%;
+    width: 66%;
+    background-color: #007e3a;
+    position: absolute;
+    top: 25%;
+    left: 16.5%
+}
+
+.child2 {
+    border-radius: 50%;
+    height: 30%;
+    width: 30%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+.child3 {
+    border-radius: 50%;
+    height: 30%;
+    width: 30%;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-60%, -50%);
