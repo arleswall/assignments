@@ -1,0 +1,26 @@
+body{
+    background-color: darkgrey;
+}
+
+div{
+    text-align: center;
+    margin: 10px;
+    border: 3px solid black;
+    padding-bottom: 10px;
+}
+
+.add {
+    background-color: skyblue;
+    width: 500px;
+    
+}
+
+.sub {
+    background-color: darkseagreen;
+    width: 500px;
+}
+
+.multiply{
+    background-color: orange;
+    width: 500px;
+}

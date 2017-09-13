@@ -18,7 +18,7 @@ for (var i = 0; i < captainPlanet.length; i++) {
 console.log(backwards);
 
 
-OR 
+//OR 
 
 //for (var i = 0; i < captainPlanet.length; i++) {
 //  backwards.push(captainPlanet[i].split("").reverse().join(""));
