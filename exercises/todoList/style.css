@@ -1,0 +1,14 @@
+.header {
+    text-align: center;
+    font-size: 4em;
+}
+
+form.input {
+    text-align: center;
+}
+
+div.list {
+    width:40%;
+    margin: auto;
+    text-align:left;
+}
