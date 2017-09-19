@@ -1,0 +1,58 @@
+@import url("http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic");
+
+.banner {
+    background-image: url(contours@2x.png), url(noise.png), url(gridlines.png), url(huntington.jpg);
+    height: 300px;
+    width: 100%;
+
+}
+
+.logo {
+    width: 125px;
+    height: 125px;
+    position: relative;
+    top: 80px;
+    left: 100px;
+}
+
+h1 {
+    font-family: 'Julius Sans One';
+    color: white;
+    position: relative;
+    display: inline-block;
+    top: 70px;
+    left: 120px;
+    font-size: 3.2em;
+    
+}
+
+h2 {
+    color: white;
+    opacity: 0.6;
+    font-style: italic;
+    position: relative;
+    display: block;
+    left: 250px;
+
+}
+
+.title {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+body {
+    font-family: 'Libre Baskerville';
+    color: #325050;
+}
+
+.box1 {
+    border: 2px solid black;
+    height: 700px;
+    line-height: 2;
+}
+.box2 {
+    border: 2px solid black;
+    height: 700px;
+    font-size: 1.2em;
+}
