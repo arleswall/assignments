@@ -1,10 +1,12 @@
 @import url("http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic");
 
-.banner {
+@font-face {
+    font-family: verdemoderna;
+    src: url(verdemoderna.woff)
+}
+.topimage {
     background-image: url(contours@2x.png), url(noise.png), url(gridlines.png), url(huntington.jpg);
     height: 300px;
-    width: 100%;
-
 }
 
 .logo {
@@ -22,18 +24,21 @@ h1 {
     display: inline-block;
     top: 70px;
     left: 120px;
-    font-size: 3.2em;
+    font-size: 3em;
     
 }
 
 h2 {
-    color: white;
-    opacity: 0.6;
+    color: #BACDCD;
     font-style: italic;
     position: relative;
     display: block;
     left: 250px;
 
+}
+h3 {
+    font-family: "Julius Sans One";
+    font-size: 2.1em;
 }
 
 .title {
@@ -41,18 +46,128 @@ h2 {
     text-decoration-style: dashed;
 }
 
+.designs {
+    text-align: center;
+    top: 50%;
+}
+
+button {
+    height: 50px;
+    color: #BACDCD;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 body {
     font-family: 'Libre Baskerville';
     color: #325050;
 }
 
+p {
+    font-size: 1.1em;
+}
+
 .box1 {
-    border: 2px solid black;
-    height: 700px;
+    height: 900px;
     line-height: 2;
+    padding-left: 120px;
+    padding-top: 70px;
+    padding-right: 80px;
 }
 .box2 {
+    height: 900px;
+    background-color: #E5EDE8;
+    text-align: left;
+    padding-top: 40px;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+.box2>ul>li {
+    border-bottom: 2px solid #C0CAC3;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.articlelink {
+    font-family: "Julius Sans One";
+    font-size: 1.3em;
+    color: #607476;
+}
+
+.writer {
+    color: #616857;
+}
+
+.by {
+    color: #C0CAC3;
+}
+
+.midimage {
+    background-image: url(bamboo.png), url(contours@2x.png), url(gridlines.png);
+    background-color: rgba(138,188,159,0.5);
+
+}
+.box3 {
+    line-height: 2;
+    padding-left: 120px;
+    padding-top: 70px;
+    padding-right: 80px;  
+}
+
+.box4 {
+    font-family: "Julius Sans One";
+    font-size: 1.4em;
+    text-align: left;
+    padding-top: 40px;
+    padding-right: 120px;
+}
+
+.box4>ul>li {
+    border-top: 2px solid #C0CAC3;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+}
+
+.lowerrow {
     border: 2px solid black;
-    height: 700px;
-    font-size: 1.2em;
+}
+
+.box5 {
+    line-height: 2;
+    padding-left: 120px;
+    padding-top: 70px;
+    padding-right: 80px;  
+}
+
+.box6 {
+    background-color: #E5EDE8;
+    height: 800px;
+}
+
+.bottompic {
+    background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(noise.png), url(koi.jpg);
+    height: 300px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.bottompic>div>h2 {
+    font-size: 2.4em;
+}
+
+.footer {
+    background-color: #134347;
+    height: 150px;
+}
+
+.footer>h1 {
+    font-family: verdemoderna;
+    text-align: center;
 }

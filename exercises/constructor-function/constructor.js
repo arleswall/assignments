@@ -5,20 +5,26 @@ function Employee (name, jobTitle, salary, status) {
     this.name = name;
     this.jobTitle = jobTitle;
     this.salary = salary;
-    this.status = "Full Time";
+    this.status = status || "Full Time";
     this.printEmployeeForm = function(){
-        console.log(Employee[i]);
+        console.log("The employee name is " + this.name + ", he's a " + this.jobTitle + " making " + this.salary + " working " + this.status + ".");
     }
 }
 
-var allEmployees = new Employee("Bob", "teacher", "$3000");
-employees.push(allEmployees);
+var person = new Employee("Bob", "teacher", "$3000");
+employees.push(person);
 
-var allEmployees = new Employee("Arles", "student", "-$14k");
-employees.push(allEmployees);
+var person1 = new Employee("Arles", "student", "-$14k");
+employees.push(person1);
 
-var allEmployees = new Employee("Erick", "Uber Driver", "$40k", this.status = "Part time");
-employees.push(allEmployees);
+var person2 = new Employee("Erick", "Uber Driver", "$40k", "Part time");
+employees.push(person2);
+
+
 
 console.log(employees);
-//Employee.prototype.printEmployeeForm = function();
+
+
+person.printEmployeeForm();
+person1.printEmployeeForm();
+person2.printEmployeeForm();
