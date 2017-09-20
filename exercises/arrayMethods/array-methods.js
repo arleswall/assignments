@@ -6,7 +6,7 @@ var cars = ["truck", "van", "sedan"];
 //  console.log(cars[i] + " goes vroom");
 //}
 
-cars.forEach(function(carros) {
+cars.forEach(function (carros) {
     console.log(carros + " goes vroom");
 })
 
@@ -18,7 +18,7 @@ var angryCars = [];
 //  angryCars.push(cars[i].toUpperCase());
 //}
 //
-var angryCars = cars.map(function(cars){
+var angryCars = cars.map(function (cars) {
     return cars.toUpperCase()
 })
 
@@ -26,12 +26,37 @@ console.log(angryCars);
 
 //.filter()
 
-var cars = [  
-    {make: "Ford", model: "E150", price: 10000, year: 2010},
-    {make: "Chevy", model: "Camaro", price: 20010, year: 2001},
-    {make: "Toyota", model: "Tacoma", price: 30900, year: 2006},
-    {make: "Ford", model: "Explorer", price: 9000, year: 2003},
-    {make: "Ford", model: "F250", price: 2400, year: 2015},
+var cars = [
+    {
+        make: "Ford",
+        model: "E150",
+        price: 10000,
+        year: 2010
+    },
+    {
+        make: "Chevy",
+        model: "Camaro",
+        price: 20010,
+        year: 2001
+    },
+    {
+        make: "Toyota",
+        model: "Tacoma",
+        price: 30900,
+        year: 2006
+    },
+    {
+        make: "Ford",
+        model: "Explorer",
+        price: 9000,
+        year: 2003
+    },
+    {
+        make: "Ford",
+        model: "F250",
+        price: 2400,
+        year: 2015
+    },
 ]
 
 var newCars = [];
@@ -44,7 +69,7 @@ var newCars = [];
 //
 //console.log(newCars);
 
-var newCars = cars.filter(function(car){
+var newCars = cars.filter(function (car) {
     return car.year > 2005
 })
 
@@ -60,7 +85,7 @@ console.log(newCars);
 //}
 //console.log(coolVan);
 
-var searchCars = cars.find(function(car){
+var searchCars = cars.find(function (car) {
     return car.model === "E150"
 })
 
@@ -75,9 +100,9 @@ console.log(searchCars);
 //  }
 //}
 
-var someCars = cars.some(function(car){
+var someCars = cars.some(function (car) {
     if (car.model === "E150")
-    console.log("There is one or mode E150s");
+        console.log("There is one or mode E150s");
 })
 
 //.every()
@@ -89,8 +114,9 @@ var someCars = cars.some(function(car){
 //  }
 //}
 
-var everyCar = cars.every(function(car){
+var everyCar = cars.every(function (car) {
     if (car.model === "E150")
         console.log("It is false that every car is an E150")
 })
+
 

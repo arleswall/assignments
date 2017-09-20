@@ -24,7 +24,7 @@ h1 {
     display: inline-block;
     top: 70px;
     left: 120px;
-    font-size: 3em;
+    font-size: 4em;
     
 }
 
@@ -41,24 +41,45 @@ h3 {
     font-size: 2.1em;
 }
 
+.htmlcsslink {
+    font-family: "Julius Sans One";
+    color:#839D81;
+}
+
+.htmlcsslink:hover {
+    background-color: #3D8A9F;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
 .title {
     text-decoration: underline;
-    text-decoration-style: dashed;
+    text-decoration-style: dotted;
 }
 
 .designs {
+    height: 300px;
     text-align: center;
-    top: 50%;
+    padding-top: 100px;
+    background-color: rgba(25, 69, 71, 0.3);
 }
 
 button {
-    height: 50px;
+    font-family: "Julius Sans One";
+    font-size: 1.3em;
+    height: 65px;
     color: #BACDCD;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     border: none;
     padding-left: 20px;
     padding-right: 20px;
 }
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 
 body {
     font-family: 'Libre Baskerville';
@@ -67,6 +88,15 @@ body {
 
 p {
     font-size: 1.1em;
+}
+
+.dottedunderline {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.textanchors {
+    color: #0D8BA1;
 }
 
 .box1 {
@@ -90,8 +120,11 @@ ul {
 
 .box2>ul>li {
     border-bottom: 2px solid #C0CAC3;
+    border-bottom-color: #D9E3DC;
     padding-top: 30px;
     padding-left: 10px;
+    margin-right: 100px;
+    padding-right: 60px;
 }
 
 .articlelink {
@@ -135,9 +168,6 @@ ul {
     padding-left: 10px;
 }
 
-.lowerrow {
-    border: 2px solid black;
-}
 
 .box5 {
     line-height: 2;
@@ -158,16 +188,29 @@ ul {
     padding-top: 100px;
 }
 
+.daveshea {
+    color: #C4CECE;
+}
 .bottompic>div>h2 {
     font-size: 2.4em;
+    color: #89A1A3;
 }
 
 .footer {
     background-color: #134347;
-    height: 150px;
+    height: 180px;
+    
 }
-
-.footer>h1 {
-    font-family: verdemoderna;
+.footer>div {
     text-align: center;
+}
+.verde {
+    font-family: verdemoderna;
+    font-size: 5em;
+    color: #89A1A3;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    top: 40px;
+    
 }
