@@ -100,17 +100,18 @@ p {
 }
 
 .box1 {
-    height: 900px;
+
     line-height: 2;
     padding-left: 120px;
     padding-top: 70px;
     padding-right: 80px;
 }
 .box2 {
-    height: 900px;
+
     background-color: #E5EDE8;
     text-align: left;
     padding-top: 40px;
+    padding-bottom: 100px;
     
 }
 
@@ -133,8 +134,19 @@ ul {
     color: #607476;
 }
 
+.articlelink:hover {
+    color: #49968E;
+    text-decoration: none;
+}
+
 .writer {
     color: #616857;
+
+}
+
+.writer:hover {
+    color: #49968E;
+    text-decoration: none;
 }
 
 .by {
@@ -159,6 +171,8 @@ ul {
     text-align: left;
     padding-top: 40px;
     padding-right: 120px;
+    background-color: rgba(25, 69, 71, 0.1);
+    padding-bottom: 300px;
 }
 
 .box4>ul>li {
@@ -212,5 +226,12 @@ ul {
     margin-right: 50px;
     position: relative;
     top: 40px;
+    border-radius: 100%;
     
+}
+
+.verde:hover {
+    background-color: #89A1A3;
+    color: #134347;
+    text-decoration-style: none;
 }

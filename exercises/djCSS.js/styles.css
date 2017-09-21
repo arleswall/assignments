@@ -1,0 +1,23 @@
+div {
+    height: 200px;
+    width: 200px;
+    border: 5px solid black;
+    display: inline-block;
+    text-align: center;
+}
+
+h1 {
+    
+}
+
+div:hover {
+    background: blue;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+div:active {
+    background-color: red;
+    transition-property: all;
+    transition-duration: 3s;
+}
