@@ -1,0 +1,28 @@
+
+table {
+    border: 7px solid black;
+    border-collapse: collapse;
+
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 15px 30px 15px 30px;
+    font-family: sans-serif;
+    font-size: 2em;
+    
+}
+
+th {
+    font-weight: bolder;
+    text-align: left;
+    
+}
+
+tr:nth-child(odd) {
+    background-color: skyblue;
+}
+
+tr:nth-child(even) {
+    background-color: gainsboro;
+}

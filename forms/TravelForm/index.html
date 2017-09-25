@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+       <div class="header">
+            <h1>Please complete travel form:</h1>
+        </div>
+    <br>
+    <form action="" name="form" id="form">
+    <div class="firstpart">
+        <div class="name">
+            <h4>First Name:</h4>
+            <input name="first" type="text" placeholder="First">
+            <h4>Last Name</h4>
+            <input name="last" type="text" placeholder="Last">
+        </div>
+        <br>
+        <div class="agegender">
+            <h4>Age</h4>
+            <input name="age" class="age" type="number" placeholder="Age">
+            <h4>Gender</h4>
+            <input name="gender" type="radio" value="Male"><label for="">Male</label>
+            <input name="gender" type="radio" value="Female"><label for="">Female</label>
+        </div>
+    </div>
+    <br>
+    <div class="secondpart">
+        <h2>Destination:</h2>
+        <select name="destination" id="destination">
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="Salt Lake City">Salt Lake City</option>
+        <option value="Miami">Miami</option>
+    </select>
+        <br>
+        <h4>Date of trip:</h4>
+        <input name="date" class="date" type="date">
+    </div>
+    <br>
+    <div class="diet">
+    <h4>Dietary Restrictions</h4>
+
+    <input name="diet" type="checkbox" value=" Lactose Intolerant"><label for="">Lactose Intolerant</label>
+    <input name="diet" type="checkbox" value=" Gluten-Free"><label for="">Gluten-Free</label>
+    <input name="diet" type="checkbox" value=" Nut Allergy"><label for="">Nut Allergy</label>
+    </div>
+    <br>
+    <button id="button" type="button">Let's Travel!</button>
+</form>
+    <script src="travel.js"></script>
+</body>
+</html>

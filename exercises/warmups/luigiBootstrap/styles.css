@@ -1,0 +1,44 @@
+@font-face {
+    font-family: luigi;
+    src: url(SuperMario256.ttf)
+}
+
+.title {
+    background-color: #EFCD08;
+    color: #E51E21;
+    font-family: luigi;
+    padding-left: 50px;
+}
+
+.pic {
+    background-color: #E51E21;
+    text-align: center;
+}
+
+.luigipic {
+    width: 30%
+}
+
+.about {
+    font-family: luigi;
+    color: #E51E21;
+    text-align: center;
+}
+
+/*
+p {
+    width: 200px;
+    margin: auto;
+}
+*/
+
+.footer {
+    height: 75px;
+    background-color: #EFCD08;
+    text-align: right;
+}
+
+.mushroom {
+    width: 70px;
+    margin-right: 20px;
+}

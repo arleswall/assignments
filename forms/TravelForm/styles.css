@@ -1,0 +1,66 @@
+body {
+    color: navy;
+}
+
+.header {
+    background-color: gainsboro;
+    border: 2px solid black;
+    width: 60%;
+    padding-left: 30px;
+}
+
+h1 {
+    font-family: sans-serif;
+    2em;
+}
+
+
+.firstpart {
+    background-color: gainsboro;
+    border: 2px solid black;
+    width: 60%;
+    padding-left: 30px;
+}
+
+h4 {
+    display: inline-block;
+}
+
+.age {
+    width: 40px;
+    margin-right: 60px;
+}
+
+.secondpart {
+    background-color: gainsboro;
+    font-size: 1.3em;
+    border: 2px solid black;
+    width: 60%;
+    padding-left: 30px;
+}
+
+select {
+    font-size: 2em;
+}
+
+.date {
+    font-size: 1.3em;
+}
+
+.diet {
+    background-color: gainsboro;
+    border: 2px solid black;
+    width: 60%;
+    padding-left: 30px;
+    color: red
+}
+
+
+button {
+    background-color: gainsboro;
+    font-size: 3em;
+    border: 3px solid black;
+    border-radius: 20%;
+    padding: 10px;
+}
+
