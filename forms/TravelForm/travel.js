@@ -9,11 +9,19 @@ document.getElementById("button").addEventListener("click", function () {
     var dietRestrictions = []
     var dietlength = document.form.diet.length
     for (var i = 0; i < dietlength; i++) {
-        if (diet[i].checked) {
+        if (diet[i].checked === true) {
             dietRestrictions.push(diet[i].value)
         }
     }
+    alert(`Hello ${first} ${last}!!
+Please double check your info: 
+Age: ${age} 
+Gender: ${gender}
+You are traveling to ${destination} on ${date}!
+We'll keep in mind your dietary restrictions are:
+${dietRestrictions.join("\n")}.`)
 
-
-    alert("Hello " + first + " " + last + "!!\nPlease double check your info:\nAge:" + age + "\nGender: " + gender + "\nYou are traveling to " + destination + " on " + date + "!\nWe'll keep in my your dietary restrictions are:\n" + dietRestrictions + ".");
 })
+
+
+//    alert("Hello " + first + " " + last + "!!\nPlease double check your info:\nAge:" + age + "\nGender: " + gender + "\nYou are traveling to " + destination + " on " + date + "!\nWe'll keep in my your dietary restrictions are:\n" + dietRestrictions.join("\n") + ".");

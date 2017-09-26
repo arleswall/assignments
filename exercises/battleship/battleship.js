@@ -2,7 +2,7 @@ var readline = require ("readline-sync");
 
 function Location(isShip, hit, display, ship) {
     this.isShip = isShipHere,
-    this.hit = hitMiss,
+    this.hit = false,
     this.display = "~",
     this.ship = gridArray[[i]];
 }
@@ -34,8 +34,8 @@ grid[y][x] = Location.display;
 console.log(grid);
 
 
-var randomGen = function() {
-    return Math.floor(Math.random() * (6));
+var randomGen = function(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 if (randomGen === 1) {
