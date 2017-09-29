@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="todobox">
+        <form id="form" action="">
+            <div>
+               <h1>API Todo List</h1>
+                <label for="">Item: </label>
+                <input type="text" class="todotext" id="todotext">
+                <label for="">Price: $</label><input type="number" class="price" id="price">
+            </div>
+            <br>
+            <label for="">Description: </label>
+            <input type="text" class="description" id="description">
+            <br><br>
+            <div class='buttonbox'>
+            <button type="button" class="addbutton" id="addbutton">ADD</button>
+            <button type="button" class="addbutton" id="getbutton">SEE LIST</button>
+            </div>
+        </form>
+
+        <ul id="ulist">
+<!--
+        <div class=listdiv1>
+        <input type='checkbox' id='checkbox'>
+        <li class=item>test</li>
+        </div>
+        <div class="listdiv2">
+            <li>$</li>
+        </div>
+        <div class='listdiv3'>
+            <li class='descriptionlist'>description</li>
+        </div>
+-->
+        </ul>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
