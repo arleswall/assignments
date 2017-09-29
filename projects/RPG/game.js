@@ -2,16 +2,41 @@ var readline = require("readline-sync");
 
 console.log("Welcome to Animal Attack! Please select your character:")
 
-var characters = ["Bear", "Raccoon", "Squirrel"]
+var players = [
+    
+    {
+        name: "Grizz - The Bear",
+        speed: 1,
+        power: 3
+},
+
+    {
+        name: "Ringo - The Raccoon",
+        speed: 2,
+        power: 2
+},
+
+    {
+        name: "Chipper - The Squirrel",
+        speed: 3,
+        power: 1
+}
+]
+
+var characters = [players[0].name, players[1].name, players[2].name];
+
 var character = readline.keyInSelect(characters);
 
-console.log("Hello " + characters[character] + "!! You seem hungry! Let's go find some food!")
+console.log("Hello " + characters[character] + "!! You seem hungry! Let's go find some food! You can go to the places below or check your stash.");
+
 
 var health = 100
+
 var items = [];
 
 while (health > 0 && exit !== true) {
     walk();
+    
 
     function walk() {
         var options = ["Suburbs", "National Park", "Forest", "Check Stash"];
@@ -49,6 +74,7 @@ while (health > 0 && exit !== true) {
     function randomNum(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
+    
 
     function suburbs() {
         if (randomNum(1, 4) === 1) {
@@ -86,7 +112,7 @@ while (health > 0 && exit !== true) {
     }
 
     function run() {
-        if (randomNum(1, 2) === 1) {
+        if (randomNum(players[character].speed, 4) === players[character].speed) {
             return console.log("Wow you're fast! You got away!"), walk();
         } else {
             return console.log("Ouch! The enemy just kicked your butt"), enemyAttack();
@@ -103,7 +129,7 @@ while (health > 0 && exit !== true) {
 
 
     function attack() {
-        if (randomNum(1, 2) === 1) {
+        if (randomNum(players[character].power, 4) === players[character].power) {
             console.log("You are a WILD animal! You scared the hell out the enemy!") // enemyRun();
         } else {
             console.log("Wrong Decision! The enemy dodged your attack and hit you back!"), enemyAttack();
