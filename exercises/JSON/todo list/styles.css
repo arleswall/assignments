@@ -1,15 +1,22 @@
+body {
+    background-image: url(paper.jpg);
+    background-size: cover;
+}
+
 .todobox {
-    width: 50%;
+/*    width: 50%;*/
     border: 2px solid black;
-    margin: auto;
-    padding: 20px;
-    background-color: skyblue;
+    margin-top: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(0,191,255, 0.3);
 }
 
 h1 {
     text-align: center;
     font-family:monospace;
     font-size: 3em;
+    margin-bottom: 30px;
 }
 
 .todotext {
@@ -17,7 +24,14 @@ h1 {
     width: 50%;
 }
 
+.pricetext {
+float: right;
+margin-right: 10px;
+    
+}
+
 .price {
+    float: right;
     font-size: 1.3em;
     width: 20%;
     text-align: right;
@@ -25,8 +39,8 @@ h1 {
 
 .description {
     font-size: 1.3em;
-    width: 95%;
-    height: 40px;
+    width: 100%;
+    height: 30px;
 }
 
 .listdiv1 {
@@ -44,10 +58,13 @@ li {
 }
 
 .buttonbox{
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
 }
 .addbutton {
-    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     border: 2px solid black;
 
 }
@@ -55,6 +72,7 @@ li {
 .item {
     font-size: 1.5em;
     font-family: sans-serif;
+    margin-left: 10px
 }
 
 .descriptionlist {

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+    <div class="todobox">
+        <form id="form" action="">
+            <div class='row'>
+                <div class='col-xs-8 col-xs-offset-2'>
+                    <h1>API Todo List</h1>
+                    <label for="">Item: </label>
+                    <input type="text" class="todotext" id="todotext">
+                   <input type="number" class="price" id="price"> <label for="" class="pricetext">Price: $ </label>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <label for="">Description: </label>
+                    <input type="text" class="description" id="description">
+                    <br><br>
+                    <div class='buttonbox'>
+                        <button type="button" class="addbutton" id="addbutton">ADD ITEM</button>
+                        <!--            <button type="button" class="addbutton" id="getbutton">SEE LIST</button>-->
+                    </div>
+                </div>
+            </div>
+     
+        </form>
+ 
+        <ul id="ulist">
+            <!--
+        <div class=listdiv1>
+        <input type='checkbox' id='checkbox'>
+        <li class=item>test</li>
+        </div>
+        <div class="listdiv2">
+            <li>$</li>
+        </div>
+        <div class='listdiv3'>
+            <li class='descriptionlist'>description</li>
+        </div>
+-->
+        </ul>
+              </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
