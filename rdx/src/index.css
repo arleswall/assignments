@@ -1,0 +1,30 @@
+.body {
+background-image: url("./img/office.jpg");
+background-size: cover;
+}
+
+.nav {
+height: 60px;
+width: 100%;
+background-color: rgba(255, 255, 255, 0.6);
+text-align: center;
+}
+
+.logo{
+  height: 60px;
+  float: left;
+}
+
+.navButtons {
+  color: black;
+  padding: 5%;
+  position: relative;
+  top: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-family: sans-serif;
+}
+
+.middle {
+  height: 500px;
+}
