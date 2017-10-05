@@ -4,10 +4,10 @@ function Header() {
 return (
   <div className='nav'>
   <img className='logo' src={require("../img/logo.png")} alt=""/>
-  <a className='navButtons'href="">Home</a>
-  <a className='navButtons'href="">Services</a>
-  <a className='navButtons'href="">About</a>
-  <a className='navButtons'href="">Contact</a>
+  <a className='navButtons'href="#services">Services</a>
+  <a className='navButtons'href="#whyus">Why Us</a>
+  <a className='navButtons'href="#about">About</a>
+  <a className='navButtons'href="#contact">Contact</a>
   </div>
 )
 }

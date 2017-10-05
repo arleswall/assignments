@@ -1,4 +1,7 @@
 .body {
+  background-color: #EEEEEE;
+}
+.cover {
 background-image: url("./img/office.jpg");
 background-size: cover;
 }
@@ -27,4 +30,76 @@ text-align: center;
 
 .middle {
   height: 500px;
+  text-align: center;
+  font-size: 2em;
+  color: #2F609F;
+  text-shadow: 3px 3px 5px #FFFFFF;
+}
+
+.services {
+  margin: 5%;
+  font-size: 1.3em;
+  color: #2F609F;
+}
+.whyus {
+  margin: 5%;
+  font-size: 1.3em;
+  color: white;
+  background-color: #2F609F;
+  padding: 5%;
+  text-align: center;
+}
+
+.whyusTitle {
+  color:white;
+}
+
+.box {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: rgba(135,206,250, 0.3);
+
+}
+.box1 {
+  display: inline-block;
+  width: 26%;
+padding-right:5%;
+text-align: left;
+}
+.box2 {
+  display: inline-block;
+  width: 26%;
+  padding-right: 1%;
+  padding-left: 1%;
+  text-align: left;
+  }
+.box3 {
+  display: inline-block;
+  width: 26%;
+  padding-left: 5%;
+  text-align: left;
+  }
+.about {
+  margin: 5%;
+  font-size: 1.3em;
+  color: #2F609F;
+}
+
+h4 {
+  color: #133071;
+}
+
+  .footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  background-color: #29401B;
+  color: white;
+}
+
+.numberFooter {
+  right: 10px;
+  position: absolute;
 }

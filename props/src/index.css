@@ -1,0 +1,11 @@
+.box {
+  height: 300px;
+  width: 200px;
+  border: 1px solid black;
+  display: inline-block;
+  text-align: center;
+}
+.pic {
+  height: 150px;
+  width: 100px;
+}
