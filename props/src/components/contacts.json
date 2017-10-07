@@ -1,0 +1,37 @@
+[
+    {
+        "img": "https://vignette.wikia.nocookie.net/disney/images/d/da/Dopey_transparent.png/revision/latest?cb=20151111070505",
+        "name": "Dopey",
+        "phone": "111-1111"
+    },
+    {
+        "img": "http://images2.fanpop.com/images/photos/6100000/Happy-snow-white-and-the-seven-dwarfs-6199676-255-350.jpg",
+        "name": "Happy",
+        "phone": "222-2222"
+    },
+    {
+        "img": "https://vignette.wikia.nocookie.net/thedescendants/images/8/8b/Img-thing.jpg/revision/latest?cb=20160619043625",
+        "name": "Bashful",
+        "phone": "333-3333"
+    },
+    {
+        "img": "https://i.pinimg.com/736x/d6/10/af/d610af31dc98c7eba596319e41197301--disney-films-cartoon-characters.jpg",
+        "name": "Sleepy",
+        "phone": "444-4444"
+    },
+    {
+        "img": "https://www.disneyclips.com/imagesnewb4/images/clipsnow24.gif",
+        "name": "Sneezy",
+        "phone": "555-5555"
+    },
+    {
+        "img": "https://vignette3.wikia.nocookie.net/disney/images/8/8b/Doc23.png/revision/latest?cb=20140105032529",
+        "name": "Doc",
+        "phone": "777-7777"
+    },
+    {
+        "img": "https://empowermoments.files.wordpress.com/2011/10/dwarf.jpg",
+        "name": "Grumpy",
+        "phone": "888-8888"
+    }
+]

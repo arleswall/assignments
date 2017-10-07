@@ -4,8 +4,9 @@
   border: 1px solid black;
   display: inline-block;
   text-align: center;
+  margin: 10px;
 }
-.pic {
+.pics {
   height: 150px;
   width: 100px;
 }

@@ -1,0 +1,51 @@
+
+.box {
+  height: 300px;
+  width: 600px;
+  display: inline-block;
+  border: 5px solid black;
+  margin: 1%;
+  text-align: center;
+  background-size: cover;
+  position: relative;
+  text-shadow: -4px 0px 20px rgba(255, 255, 255, 1);
+  font-family: sans-serif;
+}
+
+.title {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.season {
+  left: 5px;
+  bottom: 0;
+  position: absolute;
+  font-family: cursive;
+  color: whitesmoke;
+  text-shadow: -4px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.price {
+  bottom: 0;
+  right: 5px;
+  position: absolute;
+  border-radius: 50%;
+  border: 10px solid yellow;
+  background-color: yellow;
+
+}
+h1 {
+  font-size: 3em;
+}
+
+h1, h2 {
+  display: inline;
+}
+h2 {
+  font-size: 2em;
+}
+.parent{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

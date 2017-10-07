@@ -8,12 +8,15 @@ function Whyus() {
       <h4 className="whyusTitle">We're ready to make your place the cleanest it's ever been</h4>
       <div className="box">
         <div className="box1">
+          <img className="imgs" src={require("../img/assessment.jpg")} alt=""/>
           <h4>Assessment:</h4> <h5>It all starts with you telling us what you are looking for in regards to cleaning. We will tour your facility and come up with solutions to maintain your place clean.</h5>
         </div>
         <div className="box2">
+          <img className="imgs" src={require("../img/theclean.jpg")} alt=""/>
           <h4>The Clean:</h4> <h5>The moment we've all been waiting for, where we get rid of all the dust and bacteria and give your building back! We only use the safest chemicals.</h5>
         </div>
         <div className="box3">
+          <img className="imgs" src={require("../img/quality.jpg")} alt=""/>
           <h4>Quality Control Visits:</h4> <h5>We will visit your facility every 15 days for a detailed quality control check. We will talk to you briefly and make sure all of your needs are being met.</h5>
         </div>
       </div>

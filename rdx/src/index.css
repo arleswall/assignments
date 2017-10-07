@@ -29,25 +29,32 @@ text-align: center;
 }
 
 .middle {
-  height: 500px;
+  height: 600px;
   text-align: center;
   font-size: 2em;
   color: #2F609F;
   text-shadow: 3px 3px 5px #FFFFFF;
+  padding-top: 5%;
 }
 
 .services {
-  margin: 5%;
+  margin: 10%;
   font-size: 1.3em;
   color: #2F609F;
+    line-height: 1.5;
 }
 .whyus {
-  margin: 5%;
   font-size: 1.3em;
   color: white;
   background-color: #2F609F;
   padding: 5%;
   text-align: center;
+  line-height: 1.5;
+}
+
+.imgs{
+  height: auto;
+  width: 100%;
 }
 
 .whyusTitle {
@@ -81,9 +88,10 @@ text-align: left;
   text-align: left;
   }
 .about {
-  margin: 5%;
+  margin: 20%;
   font-size: 1.3em;
   color: #2F609F;
+    line-height: 1.8;
 }
 
 h4 {
