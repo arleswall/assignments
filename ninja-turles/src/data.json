@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Donatello",
+    "favorites":{
+    "color": "Purple",
+    "weapon": "Bo",
+    "food": "PIIIZZZAAAAAA!!!"},
+    "pic": "https://i5.walmartimages.com/asr/eaafc917-d7d1-4505-ace1-d0cdde6283ee_1.8141db04b83485e3bb99bc5713d146c0.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF"
+  },
+  {
+    "name": "Raphael",
+    "favorites":{
+    "color": "Red",
+    "weapon": "Sai",
+    "food": "PIIIZZZAAAAAA!!!"},
+    "pic": "https://i5.walmartimages.com/asr/deda5b53-43b0-4f6e-8779-18018f844142_1.95166ecf0ec120385bcceb7e56c52ff0.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF"
+  },
+  {
+    "name": "Leonardo",
+    "favorites":{
+    "color": "Blue",
+    "weapon": "Twin Katana",
+    "food": "PIIIZZZAAAAAA!!!"},
+    "pic": "https://i5.walmartimages.com/asr/c05527c1-4d16-445e-b354-83f6c93065f9_1.0335a59bdd80755de391a72530b96863.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF"
+  },
+  {
+    "name": "Michelangelo",
+    "favorites":{
+    "color": "Orange",
+    "weapon": "Nunchaku",
+    "food": "PIIIZZZAAAAAA!!!"},
+    "pic": "https://i5.walmartimages.com/asr/afbb8a90-737a-41c6-8d7c-917088febebf_1.bdec064a96bfc70b956a272e26f8679f.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF"
+  }
+]

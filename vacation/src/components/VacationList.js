@@ -30,9 +30,9 @@ let vacationSpots = [
 }
 ]
 function VacationList(){
-return vacationSpots.map(function(obj){
+return vacationSpots.map(function(obj){      // alternatevely spots={obj} next to component
 return (<VacationComponent
-          place = {obj.place} // alternatevely spots={obj}
+          place = {obj.place}
           price = {obj.price}
           timeToGo = {obj.timeToGo}
           picture = {obj.picture}
