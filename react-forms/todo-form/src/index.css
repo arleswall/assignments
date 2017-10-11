@@ -1,0 +1,29 @@
+.box {
+width: 50%;
+border:2px solid black;
+margin: auto;
+text-align: center;
+padding-top:2%;
+background-color: rgba(0, 255, 0, 0.6);
+
+}
+
+.title{
+font-family: cursive;
+text-shadow: 3px 3px white;
+
+}
+input {
+font-size:2em;
+border: 1px solid black;
+}
+button {
+font-size:2em;
+background-color: darkgreen;
+color: white;
+}
+li{
+  list-style: none;
+  font-size: 1.3em;
+  text-align: left;
+}

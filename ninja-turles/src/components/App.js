@@ -1,23 +1,19 @@
 import React from "react";
-import Ninjas from "./Ninjas";
-import data from "../data.json";
+import Ninjamap from "./Ninjamap";
+import background from "../background.jpg";
 
-
-
-function handleClick(favorite){
-  alert(favorite)
-}
 function App(){
-   return data.map(function(turtle){
-  return (
-      <Ninjas name={turtle.name}
-            favorites={`Favorite Color: ${turtle.favorites.color}
-Favorite Weapon: ${turtle.favorites.weapon}
-Favorite FoooD: ${turtle.favorites.food}`}
-            pic= {turtle.pic}
-            click={handleClick}
-            />
-)
-})}
+  const outerdiv = {
+    textAlign:"center",
+    backgroundImage: `url(${background})`,
+    backgroundSize: "cover",
+    height: "850px"
+  }
+  return(
+    <div style={outerdiv}>
+    <Ninjamap/>
+    </div>
+  )
+}
 
 export default App;

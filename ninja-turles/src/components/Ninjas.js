@@ -3,9 +3,8 @@ import React from "react";
 
 function Ninjas(props){
   const styleCustom = {
-    backgroundColor: "skyblue"
-  // backgroundImage: `url(${background})`,
-  // backgroundSize: "cover",
+    // backgroundColor: "whitesmoke",
+
 }
   return (
 <div style={styleCustom}>
