@@ -1,0 +1,76 @@
+.body {
+background-image: url('https://static.vecteezy.com/system/resources/previews/000/094/191/non_2x/free-old-paper-vector.jpg');
+}
+.pic{
+  height: 300px;
+  position: absolute;
+  left: 8%;
+}
+h3{
+  display:inline-block;
+}
+.addbox{
+  margin-left: 10%;
+margin-bottom: 5%;
+background-image: url(todopic.png);
+background-size: 100%;
+padding-top: 2%;
+}
+
+.additem{
+  width: 60%;
+  background-color: rgba(128, 128, 128, 0.6);
+  color: black;
+  display: inline-block;
+  margin-left: 11%;
+  font-size: 2em;
+  margin-top: 17%;
+}
+.additem2{
+  width: 55%;
+  background-color: rgba(128, 128, 128, 0.6);
+  color: black;
+  display: inline-block;
+  margin-left: 11%;
+  font-size: 2em;
+  margin-bottom: 5%;
+  
+}
+input {
+  border: none;
+  padding-left: 2%;
+}
+input::placeholder {
+  color: white;
+}
+.addbutton{
+  font-size: 31px;
+  width: 5%;
+  border:none;
+  background-color: rgba(128, 128, 128, 0.6);
+}
+.listbox{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 1%;
+  padding-left: 3%;
+  border-bottom: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5em;
+}
+.titlebox {
+  width: 100%;
+  margin-bottom: 1%;
+
+}
+.descriptionbox{
+  width: 95%;
+  display: inline-block;
+  margin-top: 1%;
+}
+.delete{
+  display: inline;
+  border: none;
+  background-color: rgba(255, 0, 0, 0.1);
+  color: red;
+}
