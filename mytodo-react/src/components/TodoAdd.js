@@ -2,7 +2,7 @@ import React from "react";
 
 function TodoAdd(props){
   return(
-    <div className="addbox">
+    <form onSubmit={props.addButton}className="addbox">
         
         <br/>
                   <input className="additem"
@@ -19,8 +19,8 @@ function TodoAdd(props){
                   value={props.newItem}
                   onChange={props.handleChange}
                   />
-        <button className="addbutton" onClick={props.addButton}>+</button>
-    </div>
+        <button className="addbutton">+</button>
+    </form>
   )
 }
 export default TodoAdd;

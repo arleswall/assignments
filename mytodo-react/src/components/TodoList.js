@@ -33,11 +33,16 @@ class TodoList extends React.Component{
     })
   }
   
-  addButton(){
+  addButton(e){
+    e.preventDefault();
 axios.post('https://api.vschool.io/arles/todo/', this.state.newTodo).then(response=>{
   this.setState(prevState=>{
     return{
-    todos: [response.data, ...prevState.todos]
+    todos: [response.data, ...prevState.todos],
+    newTodo: {
+          title: "",
+          description: ""
+  }
   }})
 })
   }
