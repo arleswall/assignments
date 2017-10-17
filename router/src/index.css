@@ -1,0 +1,29 @@
+.app-wrapper{
+  text-align: center;
+}
+
+.navbar {
+width: 50%;
+margin: auto;
+display: flex;
+justify-content: space-between;
+background-color: skyblue;
+color: navy;
+}
+
+.home{
+  height: 800px;
+  background-color: green;
+}
+.about {
+  height: 800px;
+  background-color: yellow;
+}
+.contact {
+  height: 800px;
+  background-color: blue;
+}
+.services {
+  height: 800px;
+  background-color: red;
+}

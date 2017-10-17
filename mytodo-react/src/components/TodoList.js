@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import TodoItems from "./TodoItems";
+import ItemContainer from "./ItemContainer";
 import TodoAdd from "./TodoAdd";
 
 class TodoList extends React.Component{
@@ -14,6 +14,7 @@ class TodoList extends React.Component{
     this.deleteButton = this.deleteButton.bind(this);
     this.addButton = this.addButton.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.editTodo = this.editTodo.bind(this);
   }
   
   componentDidMount(){
@@ -40,12 +41,12 @@ axios.post('https://api.vschool.io/arles/todo/', this.state.newTodo).then(respon
     return{
     todos: [response.data, ...prevState.todos],
     newTodo: {
-          title: "",
-          description: ""
+      title: "", 
+      description: ""
+    }
   }
-  }})
 })
-  }
+})}
   
   deleteButton(id){
     axios.delete(`https://api.vschool.io/arles/todo/${id}`).then(item => {
@@ -57,6 +58,24 @@ axios.post('https://api.vschool.io/arles/todo/', this.state.newTodo).then(respon
         })
       }
     )}
+    
+    editTodo(id, editedTodo){
+      axios.put(`https://api.vschool.io/arles/todo/${id}`, editedTodo).then((response)=>{
+        let newEdit = response.data;
+        this.setState((prevState)=>{
+          const newTodos = prevState.todos.map((todo)=>{
+            if(todo._id === id) {
+              return newEdit
+            } else {
+              return todo;
+            }
+          })
+          return {
+            todos: newTodos
+          }
+        })
+      })
+    }
   
   
   render(){
@@ -69,11 +88,12 @@ axios.post('https://api.vschool.io/arles/todo/', this.state.newTodo).then(respon
               addButton={this.addButton}
               />
           </div>
-        {this.state.todos.map((item)=>{
+        {this.state.todos.map((todos)=>{
         return(
-        <TodoItems 
-                items={item}
+        <ItemContainer 
+                todo={todos}
                 deleteButton={this.deleteButton}
+                key={todos._id}
                 />
     )}
   )}
