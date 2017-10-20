@@ -1,0 +1,42 @@
+#root {
+  width: 100%;
+  height: 100vh;
+  background-color: mediumaquamarine;
+}
+
+.buttons {
+  border-radius: 50%;
+  width: 150px;
+  font-size: 100px;
+  background-color: skyblue;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top: 5%;
+}
+.number{
+  font-size: 150px;
+  font-style: italic;
+  font-weight: bolder;
+  font-family: fantasy;
+  
+}
+
+.reset {
+  font-size: 60px;
+  display: inline-block;
+  background-color: red;
+  color: white;
+  border-radius: 10%;
+  font-family: courier;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: auto;
+}
+
+.remove{
+  display: flex;
+}

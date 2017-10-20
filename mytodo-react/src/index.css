@@ -12,6 +12,7 @@ h3{
 .addbox{
   margin-left: 10%;
 background-image: url(todopic.png);
+background-repeat: no-repeat;
 background-size: 100%;
 padding-top: 2%;
 }
@@ -52,27 +53,35 @@ input::placeholder {
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 1%;
-  padding-left: 3%;
   border-bottom: 1px solid black;
   background-color: rgba(255, 255, 255, 0.7);
   font-size: 1.5em;
   padding-top: 0;
 }
+
+input[type=checkbox] {
+zoom: 4;
+vertical-align: top;
+margin-top: 5%;
+background-color: skyblue;
+color: green;
+}
+
 .titlebox {
-  width: 95%;
+  width: 90%;
   margin-bottom: 0%;
-  font-size: 40px;
-  margin-top: 1%;
+  font-size: 35px;
+  margin-top: 2%;
   border-bottom: 1px dashed black;
-
-
+  border: 1px solid blue;
 }
 .descriptionbox{
-  width: 95%;
+  width: 85%;
   display: inline-block;
-  margin-top: 1%;
-  margin-bottom: 1%;
-
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 9%;
+  border: 1px solid blue;
 }
 .delete{
   display: inline;

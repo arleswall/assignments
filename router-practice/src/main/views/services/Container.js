@@ -1,7 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import ServicesComponent from "./Component"
+//import axios from "axios";
 
+// const APIurl = "apiurl"
 
 class ServicesContainer extends React.Component{
   constructor(){
@@ -33,7 +35,16 @@ class ServicesContainer extends React.Component{
         }
       ]
     })
+          //this.loadData();
   }
+  
+  //loadData(){
+  //axios.get(APIurl).then((response)=>{
+  //this.setState({
+//  services: response.data.results
+})
+// })
+}
   
   searchById(id){
      return this.state.services.find((service)=>{

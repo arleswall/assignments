@@ -49,9 +49,9 @@ axios.post('https://api.vschool.io/arles/todo/', this.state.newTodo).then(respon
 })}
   
   deleteButton(id){
-    axios.delete(`https://api.vschool.io/arles/todo/${id}`).then(item => {
+    axios.delete(`https://api.vschool.io/arles/todo/${id}`).then(todo => {
       this.setState(prevState => {
-      const newArr=  prevState.todos.filter(item => item._id !== id)
+      const newArr=  prevState.todos.filter(todo => todo._id !== id)
           return{
             todos: newArr
           }
@@ -61,11 +61,10 @@ axios.post('https://api.vschool.io/arles/todo/', this.state.newTodo).then(respon
     
     editTodo(id, editedTodo){
       axios.put(`https://api.vschool.io/arles/todo/${id}`, editedTodo).then((response)=>{
-        let newEdit = response.data;
         this.setState((prevState)=>{
           const newTodos = prevState.todos.map((todo)=>{
             if(todo._id === id) {
-              return newEdit
+              return response.data
             } else {
               return todo;
             }
@@ -92,8 +91,9 @@ axios.post('https://api.vschool.io/arles/todo/', this.state.newTodo).then(respon
         return(
         <ItemContainer 
                 todo={todos}
-                deleteButton={this.deleteButton}
+                deleteTodo={this.deleteButton}
                 key={todos._id}
+                editTodo={this.editTodo}
                 />
     )}
   )}
