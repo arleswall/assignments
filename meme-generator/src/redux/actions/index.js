@@ -1,5 +1,6 @@
-import {addMeme} from "./addMeme"
+import {addMeme, deleteMeme} from "./addMeme"
 
 export const meme = {
-  addMeme
+  addMeme,
+  deleteMeme
 }

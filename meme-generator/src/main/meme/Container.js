@@ -10,9 +10,11 @@ class MemeContainer extends React.Component{
   }
   
   genMeme(){
-    return this.props.meme.map((item, i)=>{
-      return <Meme key={item + i}
-                  meme={item}/>
+    return this.props.meme.map((item, index)=>{
+      return <Meme key={item + index}
+                  meme={item}
+                  index={index}
+                  />
     })
   }
   render(){

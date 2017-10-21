@@ -7,6 +7,9 @@ export function countries(prevCountries = [], action){
     case "ADD_COUNTRY":
         newCountries.push(action.country);
         return newCountries;
+    case "DELETE_COUNTRY":
+        newCountries.splice(action.index, 1);
+        return newCountries;
     default:
         return prevCountries
   }

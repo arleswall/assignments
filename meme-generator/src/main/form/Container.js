@@ -22,23 +22,24 @@ class FormContainer extends React.Component{
     this.setState((prevState)=>{
       return {
         inputs: {
-        ...prevState.inputs,
-        [event.target.name]: event.target.value
+          ...prevState.inputs,
+          [event.target.name]: event.target.value 
+
+        }
       }
-    }
     })
   }
   
-  handleSubmit(event){
-event.preventDefault();
-this.props.addMeme(this.state.inputs);
-this.setState({
-  inputs: {
-    image: "",
-    top: "",
-    bottom: ""
-  }
-})    
+handleSubmit(event){
+  event.preventDefault();
+  this.props.addMeme(this.state.inputs);
+  this.setState({
+    inputs: {
+      image:"",
+      top:"",
+      bottom:""
+    }
+  })
 }
   
   render(){

@@ -4,3 +4,9 @@ export function addMeme(meme){
     meme
   }
 }
+export function deleteMeme(index){
+  return{
+    type:"DELETE_MEME",
+    index
+  }
+}
