@@ -2,9 +2,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const uuid = require("uuid/v4");
-//const bountyRoutes = require("./routes/bountyRoutes");
 
-//app.use("/bounty", bountyRoutes);
 app.use(bodyParser.json());
 
 let tacos = [

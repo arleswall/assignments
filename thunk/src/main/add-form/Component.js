@@ -3,10 +3,10 @@ import React from "react";
 
 function FormComponent(props){
   return(
-    <div>
+    <div className="addbox">
         <form onSubmit={props.handleSubmit}>
-            <input onChange={props.handleChange} value={props.newItem.title} name="title" type="text"/>
-            <button>+</button>
+            <input className="additem" onChange={props.handleChange} value={props.newItem.title} name="title" type="text" placeholder="Add an item..."/>
+            <button className="addbutton">+</button>
         </form>
     </div>
   )

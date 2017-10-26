@@ -1,6 +1,6 @@
 import React from "react";
-import FormContainer from "./main/add-form/Container";
-import BountyList from "./bounty/BountyList";
+import FormContainer from "./add-form/Container";
+import BountyList from "./bounties/BountyList";
 
 function App(props){
   return(

@@ -4,7 +4,7 @@ import TodoList from "./todos/TodoList";
 
 function App(props){
   return(
-        <div>
+        <div className="body">
               <FormContainer/>
               <TodoList/>
         </div>

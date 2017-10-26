@@ -11,12 +11,12 @@ function EditComponent(props){
   }
   return(
     <div>
-        <input onChange={props.handleEdit} checked={props.completed} name="completed" type="checkbox"/>
-        <button onClick={props.handleToggle}>Edit</button>
+        <input className="checkbox" onChange={props.handleEdit} checked={props.completed} name="completed" type="checkbox"/>
+        <button className="editbutton" onClick={props.handleToggle}>...</button>
         
           <div style={props.toggleDisplay ? show : hide}>          
               <form onClick={props.handleSubmit}>
-                    <input onChange={props.handleEdit} value={props.title} name="title" type="text"/>
+                    <input className="editbar" onChange={props.handleEdit} value={props.title} name="title" type="text"/>
                     <button>Save</button>
               </form>
           </div>  

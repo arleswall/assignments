@@ -1,7 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 import FormComponent from "./Component";
-import {bounties} from "../redux/actions/";
+import {bounties} from "../../redux/actions/";
 
 class FormContainer extends React.Component{
   constructor(){
@@ -11,9 +11,8 @@ class FormContainer extends React.Component{
         first: "",
         last: "",
         living: "",
-        bounty: "",
-        type: "",
-        _id: ""
+        bounty: 0,
+        type: ""
       }
     }
     this.handleChange = this.handleChange.bind(this);
@@ -40,9 +39,8 @@ class FormContainer extends React.Component{
         first: "",
         last: "",
         living: "",
-        bounty: "",
-        type: "",
-        _id: ""
+        bounty: 0,
+        type: ""
       }
     })
   }
@@ -55,3 +53,4 @@ class FormContainer extends React.Component{
     )
   }
 }
+export default connect(null, bounties) (FormContainer);

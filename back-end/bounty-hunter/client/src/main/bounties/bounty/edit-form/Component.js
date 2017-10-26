@@ -15,4 +15,4 @@ function EditComponent(props){
   )
 }
 
-export default EditContainer;
+export default EditComponent;

@@ -10,7 +10,7 @@ class BountyList extends React.Component{
     this.genList = this.genList.bind(this);
 }
 
-compoundDidMount(){
+componentDidMount(){
   this.props.loadBounties();
 }
 

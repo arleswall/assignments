@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import {connect} from "react-redux";
 import {bounties} from "../../../../redux/actions/";
 import EditComponent from "./Component";
@@ -32,14 +32,14 @@ class EditContainer extends React.Component{
   }
   
   handleSubmit(event){
-    event.preventDefault;
-    this.props.editBounty(this.propss.bounty._id, this.state.editBounty)
+    event.preventDefault();
+    this.props.editBounty(this.props.bounty._id, this.state.editBounty)
   }
   
   render(){
-    return( EditComponent handleEdit={this.handleEdit}
+    return( <EditComponent handleEdit={this.handleEdit}
                           handleSubmit={this.handleSubmit}
-                          editBounty={this.state.editBounty}
+                          editBounty={this.state.editBounty}/>
     )
   }
 }
