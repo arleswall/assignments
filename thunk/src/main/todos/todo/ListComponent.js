@@ -12,7 +12,7 @@ function ListComponent(props){
     <div className="listbox">
       <h4 className="titlebox">{props.todo.title}</h4>
       <button className="delete" onClick={()=>{props.deleteTodo(props.todo._id)}}>X</button>
-      <EditContainer   todo={props.todo}/>
+      <EditContainer todo={props.todo}/>
     </div>
   )
 }

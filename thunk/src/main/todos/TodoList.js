@@ -31,8 +31,7 @@ class TodoList extends React.Component{
   render(){
     return(
           <div>
-                <h4>{this.genList()}</h4>
-                
+                <h4>{this.genList()}</h4>        
           </div>
       )
   }

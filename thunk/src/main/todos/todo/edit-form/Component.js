@@ -17,7 +17,7 @@ function EditComponent(props){
           <div style={props.toggleDisplay ? show : hide}>          
               <form onClick={props.handleSubmit}>
                     <input className="editbar" onChange={props.handleEdit} value={props.title} name="title" type="text"/>
-                    <button>Save</button>
+                    <button className="save">Save</button>
               </form>
           </div>  
     </div>

@@ -2,11 +2,11 @@ const todos = function(prevTodos = [], action){
       let newTodos = [...prevTodos];
   switch(action.type){
     case "ADD_TODO":
-    newTodos.push(action.todo)
+    newTodos.unshift(action.todo)
     return newTodos;
     
     case "LOAD_TODOS":
-    return action.todos;
+    return action.todos.reverse();
     
     case "DELETE_TODO":
     return newTodos.filter((todo)=>{
