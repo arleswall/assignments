@@ -42,9 +42,9 @@ class ServicesContainer extends React.Component{
   //axios.get(APIurl).then((response)=>{
   //this.setState({
 //  services: response.data.results
-})
 // })
-}
+// })
+// }
   
   searchById(id){
      return this.state.services.find((service)=>{

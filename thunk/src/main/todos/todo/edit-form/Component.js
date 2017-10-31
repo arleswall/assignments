@@ -7,8 +7,12 @@ function EditComponent(props){
     display: "none"
   }
   let show = {
-    display: "inherit"
+    display: "inline-block",
+    textAlign: "right",
+    width: "80%",
+    textDecoration: props.completed ? "line-through" : "none"
   }
+
   return(
     <div>
         <input className="checkbox" onChange={props.handleEdit} checked={props.completed} name="completed" type="checkbox"/>
@@ -16,7 +20,7 @@ function EditComponent(props){
         
           <div style={props.toggleDisplay ? show : hide}>          
               <form onClick={props.handleSubmit}>
-                    <input className="editbar" onChange={props.handleEdit} value={props.title} name="title" type="text"/>
+                    <input className="editbar" onChange={props.handleEdit} value={props.editedTodo.title} name="title" type="text"/>
                     <button className="save">Save</button>
               </form>
           </div>  

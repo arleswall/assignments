@@ -12,21 +12,28 @@ class TodoList extends React.Component{
     super();
 
     this.genList = this.genList.bind(this);
+
   }
   
   componentDidMount(){
     this.props.loadTodos();
+    
   }
   
   genList(){
+    
     return this.props.todos.map((todo, index)=>{
       return  <ListComponent
                       key={todo.title + index}
                       todo={todo}
-                      index={index}/>
+                      index={index}
+                  />
       
     })
   }
+  
+
+  
   
   render(){
     return(

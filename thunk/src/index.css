@@ -84,6 +84,7 @@ input::placeholder {
 
 input[type=checkbox] {
 zoom: 4;
+vertical-align: middle;
 }
 input[type=checkbox]:hover{
   cursor: pointer;
@@ -101,13 +102,14 @@ input[type=checkbox]:hover{
 }
 .editbar{
   background-color: rgba(135,206,250,0.9);
-  width: 85%;
-  margin-bottom: 5%;
+  width: 100%;
   font-size: 40px;
   margin-top: 2%;
-  margin-left: 8%;
-  display: inline-block;
+  display: inline;
   font-family: palatino;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: 1px dashed black;
 }
 
 
@@ -130,6 +132,7 @@ input[type=checkbox]:hover{
   margin-top: -3%;
 }
 
+
 .editbutton {
   font-size: 25px;
   background-color: rgba(220, 220, 220, 0.6);
@@ -144,5 +147,16 @@ input[type=checkbox]:hover{
   cursor: pointer;
 }
 .save{
-  float: right;
+  font-size: 15px;
+  border: none;
+  background-color: rgba(0, 255, 0, 0.2);
+  color: darkgreen;
+  vertical-align: bottom;
+  display: inline;
+}
+
+.save:hover{
+  background-color: rgba(0, 255, 0, 0.5);
+  color: white;
+  cursor: pointer;
 }

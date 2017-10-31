@@ -17,7 +17,6 @@ export function loadBounties(){
 }
 
 export function addBounty(bounty){
-  console.log(bounty)
   return (dispatch)=>{
     axios.post(bountiesUrl, bounty).then(response=>{
       dispatch({

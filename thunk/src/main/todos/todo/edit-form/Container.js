@@ -11,7 +11,6 @@ class EditContainer extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      toggleDisplay: false,
       editTodo: {
         title: props.todo.title,
         completed: props.todo.completed
@@ -19,7 +18,6 @@ class EditContainer extends React.Component{
     }
     this.handleEdit = this.handleEdit.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleToggle = this.handleToggle.bind(this);
   }
   
   handleEdit(event){
@@ -40,24 +38,15 @@ class EditContainer extends React.Component{
 
   }
   
-  handleToggle(){
-    this.setState((prevState)=>{
-      return {
-        ...prevState,
-      toggleDisplay: !prevState.toggleDisplay
-      }
-    }
-  )}
-  
   
   render(){
     return(
       <EditComponent handleEdit={this.handleEdit}
                       handleSubmit={this.handleSubmit}
-                      title={this.props.title}
+                      editedTodo={this.state.editTodo}
                       completed={this.props.completed}
-                      handleToggle={this.handleToggle}
-                      toggleDisplay={this.state.toggleDisplay}
+                      handleToggle={this.props.handleToggle}
+                      toggleDisplay={this.props.toggleDisplay}
                       />
     )
   }
