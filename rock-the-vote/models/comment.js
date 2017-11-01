@@ -9,6 +9,11 @@ let commentSchema = new Schema({
   comment: {
     type: String,
     required: true
+  },
+  issue: {
+    type: Schema.Types.ObjectId,
+    ref: "Issue",
+    required: true
   }
 })
 

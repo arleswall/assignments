@@ -18,7 +18,7 @@ mongoose.connect("mongodb://localhost/issue", (err)=>{
 })
 
 app.use("/issue", require("./routes/issueRoutes"))
-app.use("/issue", require("./routes/commentRoutes"))
+app.use("/comment", require("./routes/commentRoutes"))
 
 app.listen(port, ()=>{
   console.log(`this server is runnning on port ${port}`)

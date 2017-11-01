@@ -4,7 +4,7 @@ import IssueList from "./issues/IssueList";
 
 function App(props){
   return(
-    <div>
+    <div className="body">
       <FormContainer/>
       <IssueList/>      
     </div>

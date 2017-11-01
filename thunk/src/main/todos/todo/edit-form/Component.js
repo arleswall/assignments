@@ -9,13 +9,11 @@ function EditComponent(props){
   let show = {
     display: "inline-block",
     textAlign: "right",
-    width: "80%",
-    textDecoration: props.completed ? "line-through" : "none"
+    width: "82%"  
   }
-
   return(
     <div>
-        <input className="checkbox" onChange={props.handleEdit} checked={props.completed} name="completed" type="checkbox"/>
+        <input className="checkbox" onChange={props.handleEdit} checked={props.editedTodo.completed} name="completed" type="checkbox"/>
         <button className="editbutton" onClick={props.handleToggle}>...</button>
         
           <div style={props.toggleDisplay ? show : hide}>          

@@ -8,9 +8,13 @@ import {todos} from "../../redux/actions/"
 
 
 class TodoList extends React.Component{
-  constructor(){
-    super();
-
+  constructor(props){
+    super(props);
+    // this.state = {
+    //   editTodo: {
+    //     completed: props.todo.completed
+    //   }
+    // }
     this.genList = this.genList.bind(this);
 
   }
@@ -27,6 +31,7 @@ class TodoList extends React.Component{
                       key={todo.title + index}
                       todo={todo}
                       index={index}
+                      completed={todo.completed}
                   />
       
     })

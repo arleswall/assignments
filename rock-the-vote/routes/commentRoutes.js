@@ -4,7 +4,7 @@ const Comment = require("../models/comment");
 
 
 commentRoutes.get("/", (req, res)=>{
-  Comment.find((err, comments)=>{
+  Comment.find(req.query,(err, comments)=>{
     if (err) return res.status(500).send(err);
     return res.send(comments);
   })

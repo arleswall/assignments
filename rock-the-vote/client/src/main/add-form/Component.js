@@ -3,12 +3,17 @@ import React from "react";
 function FormComponent(props){
   return (
     <div className="addbox">
-        <form onSubmit={props.handleSubmit}>
-            <label>Title</label><input onChange={props.handleChange} value={props.newItem.title} name="title" placeholder="title" type="text"/>
-            <br/>
-            <label>Description</label><input onChange={props.handleChange} value={props.newItem.description} name="description" placeholder="description" type="text"/>
-            <button>Post</button>
-        </form>
+      <h1 className="titleName" >Discussion Forum</h1>
+      <div className="addFormBox">
+            <form onSubmit={props.handleSubmit}>
+                <label>Title: </label><input className="inputBox" onChange={props.handleChange} value={props.newItem.title} name="title" placeholder="Title" type="text"/>
+                <br/>
+                <label>Description: </label><input className="inputBox" onChange={props.handleChange} value={props.newItem.description} name="description" placeholder="Description" type="text"/>
+                  <div className="postButtonBox">
+                      <button className="postButton">Post</button>
+                  </div>
+            </form>
+        </div>
     </div>
   )
 }

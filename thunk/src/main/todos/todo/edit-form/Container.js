@@ -31,20 +31,24 @@ class EditContainer extends React.Component{
       }
     })
   }
+  componentDidUpdate(prevProps, prevState){
+    if(prevState.editTodo.completed !== this.state.editTodo.completed){
+      this.handleSubmit()
+    }
+  }
   
   handleSubmit(event){
-  event.preventDefault();
+    if(event) event.preventDefault();
      this.props.editTodo(this.props.todo._id, this.state.editTodo)
-
   }
   
   
   render(){
     return(
       <EditComponent handleEdit={this.handleEdit}
+                      todo= {this.props.todo}
                       handleSubmit={this.handleSubmit}
                       editedTodo={this.state.editTodo}
-                      completed={this.props.completed}
                       handleToggle={this.props.handleToggle}
                       toggleDisplay={this.props.toggleDisplay}
                       />

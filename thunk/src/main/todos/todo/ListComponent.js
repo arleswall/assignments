@@ -11,9 +11,7 @@ class ListComponent extends React.Component{
     super(props);
     this.state = {
       toggleDisplay: false,
-      editTodo:{
-        completed: props.todo.completed
-      }
+
     }
     this.handleToggle = this.handleToggle.bind(this);
   }
@@ -36,13 +34,13 @@ class ListComponent extends React.Component{
       marginBottom: "-3%",
       fontSize: "40px",
       marginTop: "2%",
-      marginLeft: "8%",
+      marginLeft: "10%",
       borderBottom: "1px dashed black",
       display: "inline-block",
       fontFamily: "palatino",
-      textDecoration: this.props.completed ? "line-through" : "none"
+      fontWeight:"100",
+      textDecoration: this.props.todo.completed ? "line-through" : "none"
     }
-    
   return(
     <div className="listbox">
                 <h4 style={this.state.toggleDisplay ? hide : show} >{this.props.todo.title}</h4>

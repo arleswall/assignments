@@ -18,10 +18,7 @@ let issueSchema = new Schema({
   dislikes: {
     type: Number,
     default: 0
-  },
-  comment: [{
-    type: Schema.Types.ObjectId
-  }]
+  }
 })
 
 module.exports = mongoose.model("Issue", issueSchema)
