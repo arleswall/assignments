@@ -1,0 +1,12 @@
+<div style="height: 100vh; text-align:center; background-color: #EFD5DB; font-family:serif; color: #3B332D">
+    <img style="width: 150px; padding: 30px" src="fairy_logo.png" alt="">
+    <br>
+    <h3>Thank you ${order.customer.name} for your order with us!</h3> 
+    </br>
+    <h3>Your order number is <span style="font-size: 2em">${order._id}</span><h3>
+    <br>
+    <h4>Remember to pick up your order on:
+    <h3>${newDateFormat} </h3> <h4>at</h4> <h3>${newTimeFormat}</h3>
+    <br>
+    <h4>If you have any questions call us at <span style="font-size: 1.3em">(48) 3209-7462</span></h4>
+</div>

@@ -6,10 +6,10 @@ function ProjectsComponent(props){
 const searchById = props.searchById
   return(
     <div>
-  <div className="projectLinks">
-    {props.generateLinks()}
-</div>
-    <div className="projects">
+        <div className="projectLinks">
+            {props.generateLinks()}
+        </div>
+    <div className="projectsBox">
         <Switch>
             <Route path="/projects/:id" render={(props)=>{
               return(

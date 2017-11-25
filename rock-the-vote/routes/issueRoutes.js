@@ -2,6 +2,9 @@ const express = require("express");
 const issueRoutes = express.Router();
 const Issue = require("../models/issue");
 
+//app.get("/", (req, res)=>{
+// res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+//})
 
 issueRoutes.get("/", (req, res)=>{
   Issue.find((err, issues)=>{

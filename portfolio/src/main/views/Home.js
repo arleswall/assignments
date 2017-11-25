@@ -1,9 +1,10 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 function Home(props){
   return(
     <div className="home">
-    <h1>arles.</h1>
+        <Link to="/about" className="title"><br/>arles<span className="flash">_</span></Link>
     </div>
   )
 }

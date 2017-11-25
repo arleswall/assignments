@@ -19,19 +19,19 @@ class ProjectsContainer extends React.Component{
   componentDidMount(){
     this.setState({
       projects: [{
-          title:"car wash",
-          price: 10,
-          _id: "12haha34"
+          title:"fairyland",
+          features: "Built with React",
+          _id: "fairyland"
         },
         {
-          title:"car detail",
-          price: 100,
-          _id: "45haha56"
+          title:"forum",
+          features: "Built with React",
+          _id: "forum"
         },
         {
-          title:"vacuum",
-          price: 2,
-          _id: "67haha89"
+          title:"todo list",
+          features: "Built with React",
+          _id: "todolist"
         }
       ]
     })
