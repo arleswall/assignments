@@ -1,9 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import ProjectsComponent from "./Component"
-//import axios from "axios";
-
-// const APIurl = "apiurl"
+import fairyland from "../../../images/fairyland.png";
+import forum from "../../../images/forum.png";
+import todo from "../../../images/todolist.png";
 
 class ProjectsContainer extends React.Component{
   constructor(){
@@ -21,7 +21,7 @@ class ProjectsContainer extends React.Component{
       projects: [{
           linkName: "Fairyland",
           title:"Fairyland Cupcake Shop",
-          picture: "",
+          picture: fairyland,
           features: "ReactJS, JavaScript, Node.js, MongoDB, Mongoose, Express, HTML, CSS",
           other: "Integration with PayPal; automatic e-mail sender; order management system; user authentication (/admin)",
           _id: "fairyland"
@@ -29,7 +29,7 @@ class ProjectsContainer extends React.Component{
         {
           linkName: "Forum",
           title:"Discussion Forum",
-          picture: "",
+          picture: forum,
           features: "ReactJS, JavaScript, Node.js, HTML, CSS",
           other: "",
           _id: "forum"
@@ -37,7 +37,7 @@ class ProjectsContainer extends React.Component{
         {
           linkName: "To Do List",
           title:"To Do List",
-          picture: "",
+          picture: todo,
           features: "ReactJS, JavaScript, Node.js, HTML, CSS",
           other: "",
           _id: "todolist"

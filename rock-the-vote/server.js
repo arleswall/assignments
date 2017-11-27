@@ -20,7 +20,7 @@ mongoose.connect("mongodb://localhost/issue", (err)=>{
 // mongoose.connect(settings.db, (err)=>{
 //   if(err) throw err;
 //   console.log("Connected to the database")
-})
+//})
 
 //app.use(express.static(path.resolve(__dirname, "client", "build", "index.html")));
 app.use("/issue", require("./routes/issueRoutes"))
@@ -28,7 +28,7 @@ app.use("/comment", require("./routes/commentRoutes"))
 
 // app.listen(settings.port, ()=>{
 //   console.log(`this server is runnning on port ${settings.port}`)
-})
+//})
 app.listen(port, ()=>{
   console.log(`this server is runnning on port ${port}`)
 })

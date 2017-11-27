@@ -7,7 +7,7 @@ function Project(props){
         <h1 className="projectTitle">{props.searchById(id).title}</h1>
         <br/>
         <div className="projectPicBox">
-            <a href="" className="projectPic">{props.searchById(id).picture}</a>
+            <a href=""><img className="projectPic" src={props.searchById(id).picture} alt=""/></a>
         </div>
         <div className="projectDescriptionBox">
             <h3>Single Page Application built with:</h3>

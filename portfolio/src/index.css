@@ -132,8 +132,7 @@
     text-align: left;
      display: inline-block;
      height: 400px;
-     width: 600px;
-     border: 1px solid white; 
+     width: 700px;
 }
 
 .projectDescriptionBox{
@@ -141,10 +140,9 @@
     height: 400px;
     width: 400px;
     vertical-align: top;
-    border: 1px solid red; 
     color: white;
     text-align: left;
-    padding: 1%;
+    padding-left: 2%;
     font-family: monaco, sans-serif;
     font-weight: 100;
 }
@@ -154,7 +152,7 @@
 }
 
 .projectPic{
-  
+    max-width:100%;
 }
 
 .projectTitle{
