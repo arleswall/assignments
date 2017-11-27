@@ -12,7 +12,7 @@ class App extends React.Component{
         <Navbar/>
         <Switch>
             <Route exact path="/" component={Home}/>
-            <Route path="/projects" component={ProjectsContainer}/>
+            <Route path="/projects/" component={ProjectsContainer}/>
             <Route path="/about" component={About}/>
         </Switch>
       </div>

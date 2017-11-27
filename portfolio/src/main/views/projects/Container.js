@@ -19,33 +19,33 @@ class ProjectsContainer extends React.Component{
   componentDidMount(){
     this.setState({
       projects: [{
-          title:"fairyland",
-          features: "Built with React",
+          linkName: "Fairyland",
+          title:"Fairyland Cupcake Shop",
+          picture: "",
+          features: "ReactJS, JavaScript, Node.js, MongoDB, Mongoose, Express, HTML, CSS",
+          other: "Integration with PayPal; automatic e-mail sender; order management system; user authentication (/admin)",
           _id: "fairyland"
         },
         {
-          title:"forum",
-          features: "Built with React",
+          linkName: "Forum",
+          title:"Discussion Forum",
+          picture: "",
+          features: "ReactJS, JavaScript, Node.js, HTML, CSS",
+          other: "",
           _id: "forum"
         },
         {
-          title:"todo list",
-          features: "Built with React",
+          linkName: "To Do List",
+          title:"To Do List",
+          picture: "",
+          features: "ReactJS, JavaScript, Node.js, HTML, CSS",
+          other: "",
           _id: "todolist"
         }
       ]
     })
-          //this.loadData();
   }
-  
-  //loadData(){
-  //axios.get(APIurl).then((response)=>{
-  //this.setState({
-//  projects: response.data.results
-// })
-// })
-// }
-  
+
   searchById(id){
      return this.state.projects.find((project)=>{
         return id === project._id
@@ -54,7 +54,7 @@ class ProjectsContainer extends React.Component{
   
   generateLinks(){
   return this.state.projects.map((project)=>{
-      return <Link to={`/projects/${project._id}`} key={project._id}>{project.title}</Link>
+      return <Link to={`/projects/${project._id}`} key={project._id}>{project.linkName}</Link>
     })
   }
   

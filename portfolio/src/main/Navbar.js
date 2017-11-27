@@ -8,8 +8,8 @@ function Navbar(props){
         <Link to="/" className="navbarLinks" >
             {window.location.pathname === "/" ? "":"arles_"}
         </Link>
-        <Link to="/projects" className="navbarLinks" >
-            {window.location.pathname === "/projects" ? "":"projects"}
+        <Link to="/projects/" className="navbarLinks" >
+            {window.location.pathname !== ("/") && ("/about") ? "":"projects"}
         </Link>
     </div>
   )

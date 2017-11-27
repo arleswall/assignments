@@ -2,6 +2,7 @@
   text-align: center;
   background-image: url("geobackground.jpg");
   background-size: 100% 100%;
+  height: 100vh;
 }
 
 .navbar{
@@ -17,6 +18,7 @@
     color: white;
     text-decoration: none;
     padding: 1%;
+    padding-right: 2%;
     color: #69e4ff;
 }
 
@@ -26,27 +28,29 @@
     color: white;
 }
 .home{
-  height: 95vh;
+  height: 90vh;
+  padding-top: 5vh;
 }
 
 .title{
     color: #69e4ff;
-    font-size: 8em;
+    font-size: 10em;
     font-family: 'ABeeZee', futura, sans-serif;
     font-weight: 400;
     font-style: italic;
     text-shadow: 1px 1px 1px #00BFFF;
     text-decoration: none;
+    -webkit-mask-image: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.5) 50%, rgba(0,0,0,1));
 }
 
 .title:hover {
-    color: #a6eaff;
+    color: gainsboro;
     font-weight: 600;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px black;    
 }
 
 .flash{
-	animation: flash linear 2s infinite;
+	animation: flash linear 1.5s infinite;
 }
 
 @keyframes flash {
@@ -55,37 +59,154 @@
 	100% { opacity: 1; }
 }
 
-.projectLinks{
-  position: fixed;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(255,255,255, 0.1);
-  font-size: 2em;
-  height: 100%;
+.titleBox {
+    margin: 7%;
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.titleBox .tooltiptext {
+    font-size: 2em;
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    top: 80%;
+    left: 70%; 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.titleBox:hover .tooltiptext {
+    visibility: visible;
+}
+
+.logos{
+    height: 128px;
+    width: 128px;
+    margin: 10px;
+}
+
+.jsLogo{
+    width: 256px;
+    padding-bottom: 15px;
+}
+.logosBox{
+    display: inline-block;
+}
+
+.logosBanner{
+    width: 100%;
+    background: linear-gradient(to bottom right,#0B2530, #143A49, #3A5E6F , #5DA3B9);
 }
 
 .projectLinks a {
-  text-decoration: none;
-  color: #F0FFFF;
-  margin: 50px 10px 20px 20px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid #f2f5f6;
+    padding: 10px;
+    box-shadow: 2px 2px 2px #white;
+    margin: 10px;
+    font-family: "ABeeZee", monaco, sans-serif;
 }
 
+.projectLinks a:hover {
+    color: #69e4ff;
+    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,.5) 50%, rgba(0,0,0,1));
+    background-color: rgba(0,0,0,0.6);
+    border: 2px solid #69e4ff;    
+}
+    
 .projectsBox{
-  height: 95vh;
   background-color: rgba(255,255,255, 0.1);
+  padding-bottom: 1%;
 }
 
-.project{
-    padding: 10%;
+.projectPicBox{
+    text-align: left;
+     display: inline-block;
+     height: 400px;
+     width: 600px;
+     border: 1px solid white; 
+}
+
+.projectDescriptionBox{
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+    vertical-align: top;
+    border: 1px solid red; 
+    color: white;
+    text-align: left;
+    padding: 1%;
+    font-family: monaco, sans-serif;
+    font-weight: 100;
+}
+
+.projectDescription{
+    line-height: 1.3;
+}
+
+.projectPic{
+  
+}
+
+.projectTitle{
+    padding-top: 20px;
+    color: #69e4ff;
+    font-family: "Poiret One", monaco, sans-serif;
+    font-weight: bold;
+    font-size: 3em;
 }
     
 .about{
-  height: 95vh;
-  background-color: rgba(255,255,255, 0.3);
+  width: 35%;
+  margin: auto;
+}
+
+.aboutName{
+    font-size: 3em;
+    margin-bottom: 80px;
+    color: #f2f5f6;
+    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,.5) 50%, rgba(0,0,0,1));
+
+}
+.aboutLinks{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 5%;
+    margin: auto;
 
 }
 
+.aboutLinksBox{
+    border: 2px solid #69e4ff;
+    background-color: rgba(255,255,255, 0.2);
+    font-size: 3em;
+    margin: auto;
+    padding: 17%;
+}
+
+.aboutLinks:hover{
+    color: #69e4ff;
+    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,.5) 50%, rgba(0,0,0,1));
+    background-color: black;
+    border: 2px solid #69e4ff;
+}
+
+/*.aboutLinksButton:hover{
+    color: #69e4ff;
+    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,.5) 50%, rgba(0,0,0,1));
+    background-color: black;
+    
+}*/
 .footer {
   position: fixed;
   right: 0;
