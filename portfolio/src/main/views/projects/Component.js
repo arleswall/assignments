@@ -31,12 +31,12 @@ const projectsBox={
 }
   return(
     <div>
-        <div style={window.location.pathname === "/projects/" ? centerBig : topSmall}className="projectLinks">
+        <div style={window.location.pathname === "/portfolio/" ? centerBig : topSmall}className="projectLinks">
             {props.generateLinks()}
         </div>
-    <div style={window.location.pathname === "/projects/" ? hide : projectsBox}className="projectsBox">
+    <div style={window.location.pathname === "/portfolio/" ? hide : projectsBox}className="projectsBox">
         <Switch>
-            <Route path="/projects/:id" render={(props)=>{
+            <Route path="/portfolio/:id" render={(props)=>{
               return(
                 <Project searchById={searchById}{...props}/>
               )

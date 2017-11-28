@@ -20,26 +20,35 @@ class ProjectsContainer extends React.Component{
     this.setState({
       projects: [{
           linkName: "Fairyland",
+          type: "Full Stack App",
           title:"Fairyland Cupcake Shop",
           picture: fairyland,
           features: "ReactJS, JavaScript, Node.js, MongoDB, Mongoose, Express, HTML, CSS",
           other: "Integration with PayPal; automatic e-mail sender; order management system; user authentication (/admin)",
+          linkApp: "https://google.com",
+          linkCode: "https://github.com/arleswall/fairyland",
           _id: "fairyland"
         },
         {
           linkName: "Forum",
+          type: "Full Stack App",
           title:"Discussion Forum",
           picture: forum,
-          features: "ReactJS, JavaScript, Node.js, HTML, CSS",
-          other: "",
+          features: "ReactJS, Redux?, JavaScript, Node.js, MongoDB, Mongoose, Express, HTML, CSS",
+          other: "Post and delete topics; add comments; interact with likes and dislikes buttons",
+          linkApp: "https://forum-app.now.sh/",
+          linkCode: "https://github.com/arleswall/forum",
           _id: "forum"
         },
         {
           linkName: "To Do List",
+          type: "Front End App",
           title:"To Do List",
           picture: todo,
           features: "ReactJS, JavaScript, Node.js, HTML, CSS",
-          other: "",
+          other: "Add, edit, remove items; checkbox with 'completed' property",
+          linkApp: "http://arles-todos.surge.sh/",
+          linkCode: "https://github.com/arleswall/todolist",
           _id: "todolist"
         }
       ]
@@ -54,7 +63,7 @@ class ProjectsContainer extends React.Component{
   
   generateLinks(){
   return this.state.projects.map((project)=>{
-      return <Link to={`/projects/${project._id}`} key={project._id}>{project.linkName}</Link>
+      return <Link to={`/portfolio/${project._id}`} key={project._id}>{project.linkName}</Link>
     })
   }
   

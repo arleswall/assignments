@@ -14,7 +14,7 @@ function Home(props){
     <div className="home">
         <div className="titleBox">
             <Link to="/about" className="title">arles<span className="flash">_</span></Link>            
-            <span className="tooltiptext">What the heck is arles?</span>
+            <span className="tooltiptext"><Link to="/about" className="tooltipLink" >What the heck is arles?</Link></span>
         </div>
         <div className="logosBanner">
             <div className="logosBox">
