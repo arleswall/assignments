@@ -18,7 +18,7 @@ function Home(props){
         </div>
         <div className="logosBanner">
             <div className="logosBox">
-                <img className="logos" src={react} alt=""/>
+                <img className="logos"src={react} alt=""/>
             </div>
             <div className="logosBox">
                 <img className="jsLogo" src={js} alt=""/>

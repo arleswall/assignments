@@ -25,7 +25,7 @@ class ProjectsContainer extends React.Component{
           picture: fairyland,
           features: "ReactJS, JavaScript, Node.js, MongoDB, Mongoose, Express, HTML, CSS",
           other: "Integration with PayPal; automatic e-mail sender; order management system; user authentication (/admin)",
-          linkApp: "https://google.com",
+          linkApp: "https://fairyland.herokuapp.com/",
           linkCode: "https://github.com/arleswall/fairyland",
           _id: "fairyland"
         },
