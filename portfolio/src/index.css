@@ -10,7 +10,7 @@
   justify-content: space-between;
   padding: 1%;
   height: 5vh;
-  font-size: 2em;
+  font-size: 3em;
   font-family: "Poiret One", monaco, sans-serif;
 }
 
@@ -27,7 +27,6 @@
     color: white;
 }
 .home{
-  height: 90vh;
   padding-top: 5vh;
 }
 
@@ -192,7 +191,7 @@
     text-align: left;
     padding-left: 2%;
     font-family: "crimson text", monaco, sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 100;
 }
 
@@ -209,12 +208,14 @@
     padding: 5px;
     border: 2px solid #69e4ff;
     background-color: rgba(0, 0, 0, 0.7);
-    font-family: "Poiret One", monaco, sans-serif;
-    font-weight: 300;
+    font-family: "ABeeZee", monaco, sans-serif;
+    font-weight: 100;
 }
 
 .projectCode:hover{
     background-color: rgba(0, 0, 0, 0.2);
+    color: #f2f5f6;
+    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,.5) 50%, rgba(0,0,0,1));
 }
 
 .projectDescription{

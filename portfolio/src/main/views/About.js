@@ -11,7 +11,7 @@ function About(props){
         </div>
         <div className="aboutLinksBox">
             <div className="aboutLinksButtons">
-                <a href="https://drive.google.com/file/d/1Zzp442JQr5e8Imf7hBdwDeUfbris2han/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="aboutLinks"><i className="fa fa-file-text-o" aria-hidden="true"></i> Resume</a>
+                <a href="https://drive.google.com/file/d/1Dod-TDUcT02FYHjZdVA3NFwD0_XM2kJN/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="aboutLinks"><i className="fa fa-file-text-o" aria-hidden="true"></i> Resume</a>
             </div>
             <br/>
             <div className="aboutLinksButtons">
