@@ -6,7 +6,7 @@ function ProjectsComponent(props){
 const searchById = props.searchById
 const centerBig = {
     fontSize: "3em",
-    padding: "50px",
+    padding: "20px",
     display: "flex",
     flexDirection: "column",
     margin: "auto",
