@@ -5,8 +5,8 @@ import Title from "./Title";
 function Cover () {
   return(
     <div className="cover">
-    <Header />
-    <Title />
+        <Header />
+        <Title />
     </div>
   )
 }

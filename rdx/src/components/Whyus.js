@@ -13,7 +13,7 @@ function Whyus() {
         </div>
         <div className="box2">
           <img className="imgs" src={require("../img/theclean.jpg")} alt=""/>
-          <h4>The Clean:</h4> <h5>The moment we've all been waiting for, where we get rid of all the dust and bacteria and give your building back! We only use the safest chemicals.</h5>
+          <h4>The Clean:</h4> <h5>{"The moment we've all been waiting for, where we get rid of all the dust and bacteria and give your building back! We only use the safest chemicals."}</h5>
         </div>
         <div className="box3">
           <img className="imgs" src={require("../img/quality.jpg")} alt=""/>
